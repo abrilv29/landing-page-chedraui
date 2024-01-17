@@ -3,16 +3,19 @@
 //import viteLogo from '/vite.svg'
 import Header from './components/Header'
 import './App.css'
-import ProductAll  from './components/ProductAll'
+import ProductAll from './components/ProductAll'
 
 function App() {
   return (
-    <div>
+    <main>
       <Header />
       <h1>Productos</h1>
       <ProductAll />
-    </div>
-    
+    </main>
+
+
+
+
   )
 }
 
