@@ -2,3 +2,13 @@
     --home-orange:#e57308;
     --home-blue:#0077c8;
 }
+
+.color-icon{
+    color: var(--home-orange);
+    font-size: 25px;
+}
+
+.icon-menu{
+    color: var(--home-orange);
+    font-size: 35px;
+}
