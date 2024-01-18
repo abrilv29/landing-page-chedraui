@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from "react";
 
 
@@ -42,4 +44,4 @@ function ProductAll() {
   )
 }
 
-export default ProductAll
+export default ProductAll;

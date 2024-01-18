@@ -6,13 +6,7 @@ function Header() {
         <div>
           <NavBar/>
           <BannerHeader />
-          Header
-      
-
         </div>
-
-
-
       );
     }
 
