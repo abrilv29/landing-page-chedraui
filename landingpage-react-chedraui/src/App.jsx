@@ -1,24 +1,20 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-import Header from './components/Header'
-import './App.css'
-import CategoriasAll from './components/Categorias/CategoriasAll'
-import CategoriaJeweler from './components/Categorias/CategoriaJeweler'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SearchResults from "./components/Search/SearchResults";
+import NavMenu from "./components/LandingPage/NavMenu";
+import HomePage from "./components/LandingPage/HomePage";
 
-function App() {
+const App = () => {
   return (
-    <main>
-      <Header />
-      <CategoriasAll/>
-      <CategoriaJeweler />
-    
-    </main>
+    <Router>
+      <NavMenu />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/resultados-busqueda" element={<SearchResults />} />
+        {/* Otras rutas de tu aplicación */}
+      </Routes>
+    </Router>
+  );
+};
 
 
-
-
-  )
-}
-
-export default App
+export default App;
