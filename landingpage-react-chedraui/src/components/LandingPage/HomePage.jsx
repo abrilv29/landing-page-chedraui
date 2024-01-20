@@ -1,14 +1,12 @@
-
 /* contenedor principal de la landingpage */
 
 import CardProducts from "./CardProducts";
 import Footer from "./Footer";
-import Gallery from "./Gallery";
 import HeaderPage from "./HeaderPage";
 import Online from "./Online";
 import SliderMarcas from "./SliderMarcas";
 import ClientSlider from "./ClientSlider";
-
+import ProductAll from "../Products/ProductAll";
 
 
 
@@ -17,11 +15,10 @@ function HomePage() {
     <>
     <HeaderPage />
     <CardProducts />
-    <Gallery />
+    <ProductAll/>
     <Online/>
     <SliderMarcas/>
     <ClientSlider/>
-
     <Footer/>
   
 
