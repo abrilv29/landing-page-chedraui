@@ -6,6 +6,7 @@ import laptop from "../../assets/img/banner-computadora.png";
 import envios from "../../assets/img/banner-envio.png";
 
 
+
 function SliderMarcas() {
   return (
     

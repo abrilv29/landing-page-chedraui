@@ -33,14 +33,14 @@ const ClientSlider = () => {
 
   return (
     <div className="w-full bg-slate-100 py-16 shadow-md border-b-4 border-customBlue">
-      <h2 className="mx-16 text-left text-2xl font-monserrat font-semibold tracking-wide text-customBlue md:text-3xl">
-        Nuetras marcas
+      <h2 className="mx-4 md:mx-16 text-left text-2xl font-monserrat font-semibold tracking-wide text-customBlue md:text-3xl">
+        Nuestras marcas
       </h2>
 
-      <Slider {...settings} className="container mx-auto py-10">
+      <Slider {...settings} className="container mx-auto py-10 max-w-screen-xl">
         {images.map((image, index) => (
           <div key={index} className="w-16 px-2">
-            <img src={image} alt={`Corporate Inc ${index + 1}`} className="max-w-full" />
+            <img src={image} alt={`Logo of Brand ${index + 1}`} className="max-w-full" />
           </div>
         ))}
       </Slider>
