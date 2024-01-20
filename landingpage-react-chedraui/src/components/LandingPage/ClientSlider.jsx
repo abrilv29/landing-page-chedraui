@@ -10,6 +10,7 @@ import envisage from "../../assets/img/logo_envisage.png";
 import selectobaby from "../../assets/img/logo_selectobaby.png";
 import home from "../../assets/img/logo_home.png";
 
+
 const ClientSlider = () => {
   const images = [
     selecto,
@@ -23,24 +24,22 @@ const ClientSlider = () => {
   ];
 
   const settings = {
-    dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '50px', // Ajusta este valor según tus preferencias
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   return (
-    <div className="w-full bg-gray-100 py-16 shadow-md border-b-4 border-b-blue-600">
-      <h2 className="mx-2 text-center text-2xl font-bold uppercase tracking-wide text-blue-600 md:text-3xl">
-        Trusted by Over 5000 Clients
+    <div className="w-full bg-slate-100 py-16 shadow-md border-b-4 border-customBlue">
+      <h2 className="mx-16 text-left text-2xl font-monserrat font-semibold tracking-wide text-customBlue md:text-3xl">
+        Nuetras marcas
       </h2>
 
       <Slider {...settings} className="container mx-auto py-10">
         {images.map((image, index) => (
-          <div key={index} className="w-32 px-2">
+          <div key={index} className="w-16 px-2">
             <img src={image} alt={`Corporate Inc ${index + 1}`} className="max-w-full" />
           </div>
         ))}
