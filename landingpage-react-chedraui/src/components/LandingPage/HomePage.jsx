@@ -7,6 +7,7 @@ import Online from "./Online";
 import SliderMarcas from "./SliderMarcas";
 import ClientSlider from "./ClientSlider";
 import ProductAll from "../Products/ProductAll";
+import Newsletter from "./Nestlleter";
 
 
 
@@ -19,6 +20,7 @@ function HomePage() {
     <Online/>
     <SliderMarcas/>
     <ClientSlider/>
+    <Newsletter/>
     <Footer/>
   
 

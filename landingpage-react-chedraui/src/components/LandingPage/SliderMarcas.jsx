@@ -1,13 +1,9 @@
 import ejercicio from "../../assets/img/banner-gym.png";
 import sonido from "../../assets/img/banner-sonido.png";
-import lineablanca from "../../assets/img/banner-linea.png";
-import detergente from "../../assets/img/banner-jabon.png";
 import juguetes from "../../assets/img/juguetes.png";
 import telefonia from "../../assets/img/banner-cel.png";
-import videojuegos from "../../assets/img/banner-videojuegos.png";
 import laptop from "../../assets/img/banner-computadora.png";
 import envios from "../../assets/img/banner-envio.png";
-
 
 
 function SliderMarcas() {
