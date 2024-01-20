@@ -1,18 +1,25 @@
 import Slider from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import selecto from "../../assets/img/logo_selecto.png";
+import chedraui from "../../assets/img/logo_chedraui.png";
+import first from "../../assets/img/logo_firststreet.png";
+import sun from "../../assets/img/logo_sun.png";
+import supramed from "../../assets/img/logo_supramed.png";
+import envisage from "../../assets/img/logo_envisage.png";
+import selectobaby from "../../assets/img/logo_selectobaby.png";
+import home from "../../assets/img/logo_home.png";
 
 const ClientSlider = () => {
   const images = [
-    "/images/v_4f0x3etePbAwIeGnqWS.png",
-    "/images/GkFKzowNcgxqSdxMw11na.png",
-    "/images/Kx7GvMcT8ewzDlNZPLkLE.png",
-    "/images/oOyuz8sTx8VpDneLnQSef.png",
-    "/images/AgYgu-pDBywcYCD2YfL3p.png",
-    "/images/zj2Gt30nlmo-7GK5BXo5C.png",
-    "/images/9i0_cazyujYv1NwUM9M44.png",
-    "/images/7Segj8XLDXiyQqlpQh1pd.png",
+    selecto,
+    chedraui,
+    first,
+    sun,
+    supramed,
+    envisage,
+    selectobaby,
+    home,
   ];
 
   const settings = {
@@ -22,6 +29,7 @@ const ClientSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
+    centerPadding: '50px', // Ajusta este valor según tus preferencias
   };
 
   return (
@@ -32,8 +40,8 @@ const ClientSlider = () => {
 
       <Slider {...settings} className="container mx-auto py-10">
         {images.map((image, index) => (
-          <div key={index} className="w-40 px-6">
-            <img src={image} alt={`Corporate Inc ${index + 1}`} />
+          <div key={index} className="w-32 px-2">
+            <img src={image} alt={`Corporate Inc ${index + 1}`} className="max-w-full" />
           </div>
         ))}
       </Slider>
@@ -42,4 +50,3 @@ const ClientSlider = () => {
 };
 
 export default ClientSlider;
-

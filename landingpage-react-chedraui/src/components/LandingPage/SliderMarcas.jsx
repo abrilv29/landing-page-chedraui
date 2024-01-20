@@ -1,66 +1,68 @@
+import ejercicio from "../../assets/img/banner-gym.png";
+import sonido from "../../assets/img/banner-sonido.png";
+import lineablanca from "../../assets/img/banner-linea.png";
+import detergente from "../../assets/img/banner-jabon.png";
+import juguetes from "../../assets/img/juguetes.png";
+import telefonia from "../../assets/img/banner-cel.png";
+import videojuegos from "../../assets/img/banner-videojuegos.png";
+import laptop from "../../assets/img/banner-computadora.png";
+import envios from "../../assets/img/banner-envio.png";
+
 
 
 function SliderMarcas() {
-    return (
-            <div className="w-screen bg-white sm:px-4 xl:px-12">
-              <div className="z-10 mx-auto w-full px-6 py-12 sm:px-8 sm:py-16 lg:px-10 xl:px-16">
-                <div className="mb-12">
-                  <div className="lg:flex-no-wrap -mx-3 flex flex-row flex-wrap items-end">
-                    <div className="mr-auto w-full flex-grow px-3">
-                      <h3 className="text-3xl font-bold text-indigo-600 sm:text-5xl">Valley Go to Marketing Studio</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="-mx-2 flex flex-wrap font-bold">
-                  {/* Sección 1 */}
-                  <div className="mb-4 w-full px-2 lg:w-3/5">
-                    <div className="h-full w-full bg-blue-900 p-6">
-                      <div className="z-10 flex flex-col justify-between">
-                        <h1 className="text-4xl text-white sm:text-8xl">#1</h1>
-                        <h6 className="mt-12 text-xl text-white sm:text-3xl">Marketing Studio in the Bay Area.</h6>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Sección 2 */}
-                  <div className="mb-4 w-full px-2 lg:w-2/5">
-                    <div className="h-full w-full bg-yellow-400 p-6">
-                      <div className="z-10 flex flex-col justify-between">
-                        <h1 className="text-4xl text-blue-900 sm:text-8xl">FDA</h1>
-                        <h6 className="mt-12 text-xl text-blue-900 sm:text-3xl">Approved by FDA and 25 other organizations.</h6>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Sección 3 */}
-                  <div className="mb-4 w-full px-2 lg:w-1/3">
-                    <div className="h-full w-full bg-indigo-600 p-6 relative">
-                      <div className="absolute z-0 opacity-0 hover:opacity-50" style={{ mixBlendMode: 'multiply' }}></div>
-                      <div className="z-10 flex flex-col justify-between">
-                        <h1 className="text-4xl text-white sm:text-8xl">70+</h1>
-                        <h6 className="mt-12 text-xl text-white sm:text-3xl">Awards</h6>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Sección 4 */}
-                  <div className="mb-4 w-full px-2 lg:w-1/3">
-                    <div className="h-full w-full bg-blue-400 p-6">
-                      <div className="z-10 flex flex-col justify-between">
-                        <h1 className="text-4xl text-white sm:text-8xl">12k</h1>
-                        <h6 className="mt-12 text-xl text-white sm:text-3xl">New Users Every Month</h6>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Sección 5 */}
-                  <div className="mb-4 w-full px-2 lg:w-1/3">
-                    <div className="h-full w-full bg-red-200 p-6">
-                      <div className="z-10 flex flex-col justify-between">
-                        <h1 className="text-4xl text-blue-900 sm:text-8xl">23</h1>
-                        <h6 className="mt-12 text-xl text-blue-900 sm:text-3xl">Fortune 500 Clients</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  return (
+    
+        <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24 flex items-center">
+          <div className="-m-1 flex flex-row sm:flex-wrap md:-m-2">
+            <div className="flex w-full sm:w-1/2 flex-wrap lg:flex-row flex-row-reverse">
+              <div className="w-full lg:w-1/2 p-1 md:p-2">
+                <img
+                  src={envios}
+                  alt="envios"
+                  className="block h-full w-full rounded-lg 2xl:rounded-2xl object-fill object-center"
+                />
+              </div>
+              <div className="w-full lg:w-1/2 p-1 md:p-2">
+                <img
+                  src={telefonia}
+                  alt="telefonia"
+                  className="block h-full w-full rounded-lg 2xl:rounded-2xl object-fill object-center"
+                />
+              </div>
+              <div className="w-full p-1 md:p-2">
+                <img
+                  src={sonido}
+                  alt="videojuegos"
+                  className="block h-full w-full rounded-lg 2xl:rounded-2xl object-fill object-center max-h-none lg:max-h-[1000px]"
+                />
               </div>
             </div>
-      );
-    }
+            <div className="flex w-full sm:w-1/2 flex-wrap">
+              <div className="w-full p-1 md:p-2">
+                <img
+                  src={ejercicio}
+                  alt="ejercicio"
+                  className="block h-full w-full rounded-lg 2xl:rounded-2xl object-cover object-center"
+                />
+              </div>
+              <div className="w-1/2 p-1 md:p-2">
+                <img
+                  src={juguetes}
+                  alt="juguetes"
+                  className="block h-full w-full rounded-lg 2xl:rounded-2xl object-cover object-center"
+                />
+              </div>
+              <div className="w-1/2 p-1 md:p-2">
+                <img
+                  src={laptop}
+                  alt="laptop"
+                  className="block h-full w-full rounded-lg 2xl:rounded-2xl object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+  );
+}
 export default SliderMarcas;
